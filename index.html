@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- TITLE, AUTH, DESC -->
+  <title>Pocket Summoner | HTML edition</title>
+  <meta name="author" content="Seth T. Tal">
+  <meta name="description" content="Menu based RPG with javascript, html, and css">
+
+  <!-- LINKS: CSS, JS, FONTS, ETC -->
+    <!-- css -->
+  <link rel="stylesheet" href="./css/master.css">
+  <link rel="stylesheet" href="./css/current.css">
+  <link rel="stylesheet" href="./css/menus.css">
+
+    <!-- js -->
+    <script src="./js/exp-bar.js" charset="utf-8"></script>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono|Roboto+Slab" rel="stylesheet">
+
+</head>
+<body>
+
+  <h1>HTML Summoner</h1>
+
+  <div id="wrapper-main">
+
+    <!-- HEADER CONTENT -> level, name, moneyz, exp -->
+    <header>
+      <!-- <div id="level">[level: value]</div> -->
+      <div id="rank-container">
+        <svg id="player-rank" width="50" height="50" viewbox="0 0 50 50">
+          <text id="p-rank-num" x="15" y="38">0</text>
+        </svg>
+      </div>
+      <div id="player-name" valu>[MaxCharCount=17]</div>
+      <div id="exp-currency-container">
+        <div id="currency">$[amount]</div>
+        <div id="exp" onclick="gainExp()"><div id="progress"></div></div>
+      </div>
+    </header>
+
+    <!-- Selected "Guard" -->
+    <div id="selected-guard">
+      <div class="wrapper">
+        <figure>
+          <img src="./images/lynxV2.png" alt="Img of Guard goes here">
+          <figcaption id="guard-name">[guard name]</figcaption>
+        </figure>
+        <div id="guard-stats">
+          <svg id="guard-rank" width="50" height="50" viewbox="0 0 50 50">
+            <text id="texty" x="9" y="35">60</text>
+          </svg>
+          <!-- <div id="rank">[NUM]</div> -->
+
+          <ul id="stats">
+            <div id="atk">atk ----------**</div>
+            <div id="matk">def -----</div>
+            <div id="mdef">mdef --------*</div>
+            <div id="spd">spd ---</div>
+            <div id="int">int --------------**</div>
+          </ul>
+
+          <div id="hp">HP
+            <div id="health-bar"><div id="remaining-health"></div></div>
+            <p id="health-val">90/100</p>
+          </div>
+
+            <div id="attacks-container">
+              <ul id="attacks">
+                <div class="attack-shadow"><li class="attack">atk1</li></div>
+                <div class="attack-shadow"><li class="attack">atk2</li></div>
+                <div class="attack-shadow"><li class="attack">atk3</li></div>
+                <div class="attack-shadow"><li class="attack">atk4</li></div>
+              </ul>
+            </div>
+
+        </div>
+      </div> <!-- Selected Guard Wrapper Close -->
+    </div>
+
+    <!-- MAIN CONTENT:
+      Messages    Quest    Fight
+      "Guards"    Shop     Friends
+     -->
+    <main>
+
+      <nav>
+        <ul>
+          <li><a href="#"><img src="./images/icons/Speech-bubble.svg" alt=""><p>Messages</p></a></li>
+          <li><a href="#"><img src="./images/icons/castle.svg" alt="Castle Icon"><p>Quests</p></a></li>
+          <li><a href="#"><img src="./images/icons/sword.svg" alt="A crossed sword image"><p>Fight</p></a></li>
+          <li><a href="#"><img src="./images/icons/egg.svg" alt="Egg Icon"><p>Guards</p></a></li>
+          <li><a href="#"><img src="./images/icons/ingot.svg" alt="Gold Ingot Icon"><p>Shop</p></a></li>
+          <li><a href="#"><img src="./images/icons/symbols.svg" alt="Some Symbol Icon thing"><p>Friends</p></a></li>
+        </ul>
+      </nav>
+
+    </main>
+
+    <!-- FOOTER CONTENT:
+ [Profile]    [Documentation]    [Settings]
+    -->
+    <footer>
+      <ul>
+        <li><a href="#"><img src="./images/icons/user.svg" alt="Profile Icon">Profile</a></li>
+        <li><a href="#"><img src="./images/icons/asking.svg" alt="Help Icon">Help</a></li>
+        <li><a href="#"><img src="./images/icons/working.svg" alt="Settings Icon">Settings</a></li>
+      </ul>
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+#popButton {
+  color: lightgrey;
+  border: 2px solid black;
+  background-color: grey;
+  width: 150px;
+  height: 80px;
+  margin: 400px auto;
+  text-align: center;
+  line-height: 75px;
+  border-radius: 2em;
+}
+
+#popButton:hover {
+  cursor: default;
+  margin: 375px auto;
+}
+
+#popButton:active {
+  margin: 400px auto;
+}
+
+.popup {
+  position: relative;
+  background: white;
+  width: 480px;
+  height: 640px;
+  border-radius: 2em;
+  margin: 80px auto;
+  display: none;
+}
+
+.popup footer {
+  position: absolute;
+  width: 480px;
+  height: 50px;
+  bottom: 0;
+  text-align: center;
+  line-height: 50px;
+}
+
+#quest-1 {
+  position: absolute;
+  width: 90%;
+  height: 70px;
+  margin: 20px 24px 20px 24px;
+  border: 4px solid #be6929;
+  border-radius: 1em;
+  background-image: url('../images/forest.jpg');
+  background-size: cover;
+  color: #68c342;
+  text-align: center;
+  font-size: 36pt;
+  font-family: 'Merienda One', cursive;
+  line-height: 70px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#quest-1:hover { cursor: default; }
+
+#quest-2 {
+  position: absolute;
+  width: 90%;
+  height: 70px;
+  margin: 110px 24px 20px 24px;
+  background: lightgrey;
+  border: 4px solid #be6929;
+  border-radius: 3em;
+}
+
+#quest-3 {
+  position: absolute;
+  width: 90%;
+  height: 70px;
+  margin: 200px 24px 20px 24px;
+  background: lightgrey;
+  border: 4px solid #be6929;
+  border-radius: 0.5em;
+  background-image: url('../images/forest.jpg');
+  background-size: cover;
+  color: orange;
+  text-align: center;
+  font-size: 36pt;
+  font-family: 'Merienda One', cursive;
+  line-height: 70px;
+  text-shadow:
+    -2px -2px 0 lightblue,
+    2px -2px 0 lightblue,
+    -2px 2px 0 lightblue,
+    2px 2px 0 lightblue;
+}
+
+#quest-4 {
+  position: absolute;
+  width: 90%;
+  height: 70px;
+  margin: 290px 24px 20px 24px;
+  background: lightgrey;
+  border: 4px solid #be6929;
+  border-radius: 0.25em;
+}

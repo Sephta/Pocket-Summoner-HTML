@@ -1,0 +1,125 @@
+/*
+Author: Seth T. Tal
+Desc: css styles for the "Current Guard" section of page
+Date: June 2, 2018
+*/
+
+#selected-guard {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  display: table;
+  font-family: 'Roboto Mono', "Courier New", Courier, monospace;
+}
+
+#selected-guard .wrapper {
+  width: 95%;
+  height: 95%;
+  margin: 10px auto 0 auto;
+  border-radius: 1em;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#selected-guard figure {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#selected-guard figure img {
+  width: 100%;
+  background: linear-gradient(-50deg, #acde97 20%, #68c342) 80%;
+  border-radius: 1em 0 2em 2em;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+}
+
+#selected-guard figure figcaption {
+  margin-top: 20px;
+  font-size: 22pt;
+}
+
+#guard-stats {
+  border-radius: 0 1em 1em 1em;
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+#guard-rank {
+  display: block;
+  position: relative;
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.2);
+}
+
+#texty {
+  fill: #466219;
+  font-size: 18px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* #rank {
+  display: none;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background-color: grey;
+  line-height: 55px;
+} */
+
+#stats {
+  position: relative;
+  top: 1em;
+  text-align: left;
+  display: inline-block;
+  width: 200px;
+}
+
+#hp {
+  text-align: center;
+  position: relative;
+  top: 2em;
+}
+
+#hp #health-bar {
+  display: inline-block;
+  width: 200px;
+  height: 12px;
+  border: 2px solid #466219;
+  border-radius: 3px;
+  background-color: #9ed589;
+}
+
+#hp #health-bar #remaining-health {
+  width: 90%;
+  height: 8px;
+  background-color: #f6f10d;
+}
+
+#attacks-container {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  height: 50px;
+}
+
+#attacks div {
+  vertical-align: middle;
+  margin: 10px 5px;
+  display: inline-block;
+}
+
+.attack-shadow {
+  border-radius: 50%;
+  box-shadow: 0 30px 10px rgba(0, 0, 0, 0.2);
+}
+
+.attack {
+  margin: 0 10px;
+  border-radius: 1em;
+  font-size: 10pt;
+}

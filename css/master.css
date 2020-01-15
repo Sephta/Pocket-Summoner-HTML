@@ -1,0 +1,133 @@
+/*
+Author: Seth T. Tal
+Desc: Style Sheet for Global Styles, Resets, and the Header Content
+Date: June 2, 2018
+
+COLORS:
+  #466219
+  #acde97
+  #68c342
+  #72441d
+  #be6929
+  #fdf89c
+*/
+
+/* GLOBAL, RESETS */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Roboto Slab', Verdana, "Geneva", sans-serif;
+  color: #466219;
+  background-image: radial-gradient(#fdf89c 50%, #be6929);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  margin-top: 25px;
+}
+
+#wrapper-main {
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 800px;
+  max-height: 800px;
+  overflow: hidden;
+  background: radial-gradient(#acde97 20%, #68c342 78%);
+  border-radius: 2em;
+  box-shadow: 0 0 10px rgb(75, 75, 75), 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------ OTHER CONTENT ----------------------------- */
+
+@font-face {
+  font-family: 'Digital Tech';
+  src: url('../fonts/Digital_tech.otf');
+}
+
+/* ------------------------------ HEADER CONTENT ---------------------------- */
+
+header {
+  width: 95%;
+  height: 50px;
+  margin: 0 auto;
+  border-bottom: 3px solid #2c9a63;
+  border-left: 3px solid #2c9a63;
+  border-right: 3px solid #2c9a63;
+  border-radius: 18px 10px 1em 18px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: linear-gradient(-90deg, lightgreen, green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#rank-container {
+  flex-basis: 25%;
+  width: 50px;
+  height: 50px;
+}
+
+#player-rank {
+  border-bottom: 3px solid #2c9a63;
+  border-right: 3px solid #2c9a63;
+  border-radius: 18px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#p-rank-num {
+  font-size: 18pt;
+  font-family: 'Press Start 2P', cursive;
+  fill: #466219;
+}
+
+/* #level {
+  line-height: 50px;
+  margin: 0 25px;
+} */
+
+#player-name {
+  flex-basis: 25%;
+  line-height: 50px;
+  margin: 0 12.5px;
+  font-size: 13pt;
+}
+
+#exp-currency-container {
+  flex-basis: 50%;
+  line-height: 25px;
+  margin-right: 25px;
+}
+
+#currency {
+  text-align: right;
+  margin: 0 25px;
+}
+
+#exp {
+  width: 300px;
+  margin-top: 2px;
+  border: 2px solid #466219;
+  border-radius: 3px;
+  background-color: #9ed589;
+}
+
+#progress {
+  width: 0;
+  height: 10px;
+  background-color: #f6f10d;
+}
